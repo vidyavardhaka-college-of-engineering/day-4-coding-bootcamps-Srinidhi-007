@@ -11,10 +11,23 @@
 
 int main()
 {
-   //Declare all the variables[N, array a, i] used in the code
-   //Read the Value of N using scanf statement
-   //Read the array elements using for loop and scanf statment
-   //Print the array elements in using printf statement
-   
+ int a[100],i,n,sum=0;
+ 
+ printf("Input number of elements to be stored in array:");
+ scanf("%d",&n);
+
+ printf("input %d elements into array:\n",n);
+ for(i=0;i<n;i++)
+ {
+   printf("element - %d :",i);
+   scanf("%d",&a[i]);
+ }
+
+ for(i=0;i<n;i++)
+ {
+   sum=sum+a[i];
+  }
+ printf("sum of all elements in the array is :%d \n",sum);
+
    return 0; 
 }
